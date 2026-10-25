@@ -3,6 +3,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci --omit=dev || npm install --omit=dev
 COPY server.js ./
-EXPOSE 8080
+EXPOSE 3002
 CMD ["npm", "start"]
 
